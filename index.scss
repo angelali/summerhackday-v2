@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+
+$MAIN_COLOR: #fbd303;
+$WHITE: #fff;
+
+html, body {
+    background: $MAIN_COLOR;
+    color: $WHITE;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+#container-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#container {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: scroll;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+header {
+    background: rgba($MAIN_COLOR, 0.3);
+    margin: 0 auto;
+    max-width: 640px;
+    overflow: hidden;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: -300px;
+
+    h1 {
+        font-family: "Amatic SC", sans-serif;
+        font-size: 8em;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: "Amatic SC", sans-serif;
+        font-size: 3.5em;
+        font-weight: 400;
+        margin: 0;
+        margin-top: -20px;
+    }
+
+    #header-intro {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 28px auto 48px;
+
+        .amp {
+            font-family: "Playfair Display";
+        }
+    }
+
+    #header-cta {
+        border: 2px solid $WHITE;
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 0 auto;
+        padding: 16px 48px;
+
+        transition: all 0.2s ease;
+
+        &:hover {
+            background: $WHITE;
+            color: $MAIN_COLOR;
+            cursor: pointer;
+        }
+    }
+
+    #header-more {
+        margin: 12px auto;
+
+        a {
+            border-bottom: 1px dotted $WHITE;
+        }
+
+        a:hover {
+            border-bottom-style: solid;
+        }
+    }
+}
