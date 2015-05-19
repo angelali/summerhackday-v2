@@ -35,6 +35,10 @@ a {
     text-decoration: inherit;
 }
 
+::selection {
+    background: rgba(0, 0, 0, 0.1);
+}
+
 header {
     background: rgba($MAIN_COLOR, 0.3);
     margin: 0 auto;
